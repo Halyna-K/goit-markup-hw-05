@@ -33,7 +33,7 @@
               <a class="link menu-link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="menu-item">
-              <a class="link menu-link" href="">Контакты</a>
+              <a class="link menu-link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -69,7 +69,9 @@
         <div class="container hero-content">
           <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
           <div class="hero-content-button">
-            <button class="button" type="button">Заказать услугу</button>
+            <button class="button" type="button" data-modal-open>
+              Заказать услугу
+            </button>
           </div>
         </div>
       </section>
@@ -132,12 +134,22 @@
                 alt="programer_working"
                 width="370"
               />
+              <div class="gallery-thumb">
+                <h3 class="gallery-thumb-item">Десктопные приложения</h3>
+              </div>
             </li>
+
             <li class="grid-item gallery-item">
               <img src="./images/jobs/box_2.jpg" alt="developer" width="370" />
+              <div class="gallery-thumb">
+                <h3 class="gallery-thumb-item">Мобильные приложения</h3>
+              </div>
             </li>
             <li class="grid-item gallery-item">
               <img src="./images/jobs/box_3.jpg" alt="web_design" width="370" />
+              <div class="gallery-thumb">
+                <h3 class="gallery-thumb-item">Дизайнерские решения</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -462,7 +474,7 @@
 
     <!-- footer-->
     <footer class="dark-bg">
-      <div class="container">
+      <div class="container" id="contacts">
         <ul class="list grid">
           <li class="grid-item">
             <div class="footer-container-address">
@@ -555,5 +567,12 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-close" data-modal-close>X</button>
+        <p class="modal-title">Заказать услугу</p>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
