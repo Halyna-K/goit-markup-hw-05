@@ -438,19 +438,11 @@ address {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects-item {
-  padding: 20px 24px;
-}
-.projects-bg:hover .projects-thumb::before {
-  transform: translateY(0);
-}
 .projects-thumb {
   position: relative;
   overflow: hidden;
 }
-.projects-thumb:hover::before {
-  opacity: 1;
-}
+
 .projects-thumb::before {
   display: inline-block;
   content: "";
@@ -482,11 +474,16 @@ address {
   transform: translateY(100%);
   transition: transform var(--animation);
 }
-.projects-overlay:hover {
+.projects-item {
+  padding: 20px 24px;
+}
+.projects-bg:hover .projects-thumb::before {
+  transform: translateY(0);
   opacity: 1;
 }
 .projects-bg:hover .projects-overlay {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .filter-content {
